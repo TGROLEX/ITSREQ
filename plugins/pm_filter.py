@@ -727,7 +727,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "surprise":
         btn = [[
-            InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', callback_data='start')
+            InlineKeyboardButton('🪄sᴜʀᴘʀɪsᴇ🪄', callback_data='start')
         ]]
         reply_markup=InlineKeyboardMarkup(btn)
         await client.edit_message_media(
@@ -746,12 +746,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('× ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ×', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('ᴏᴡɴ ɪɴғᴏ', url='https://t.me/at_xu_l0')
+            InlineKeyboardButton('ᴏᴡɴᴇʀ🧑‍💻', url='https://t.me/at_xu_l0')
             ],[
-            InlineKeyboardButton('ʜᴇʟᴘ', callback_data='help2'),
-            InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about')
+            InlineKeyboardButton('💠ʜᴇʟᴘ💠', callback_data='help2'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ🌿', callback_data='about')
             ],[
-            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ', url='https://t.me/moviehub_support')
+            InlineKeyboardButton('Mᴏᴠɪᴇ Gʀᴏᴜᴘ🍿', url='https://t.me/moviehub_support')
          ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await client.edit_message_media(
